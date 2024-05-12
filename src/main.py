@@ -56,10 +56,18 @@ elif choice == 5:       #Возведение в степень
 
 
 elif choice == 6:       #Конвертер мер и весов
+    print('Что будем конвертировать?')
+    print('┏1. Вес')
+    print('┗2. Растояние')
+    choice5 = int(input())
+if choice5 == 1:    #Вес
     print('Что ты хочешь конвертировать?')
     print('┏ 1. Миллиграммы --> граммы')
     print('┣ 2. Граммы --> килограммы')
-    print('┗ 3. Килограммы --> тонны ')
+    print('┣ 3. Килограммы --> тонны ')
+    print('┣ 4. Граммы --> миллиграммы')
+    print('┣ 5. Килограммы  --> граммы')
+    print('┗ 6. Тонны  --> килограммы ')
     choice2 = int(input()) 
     if choice2 == 1:
         num1 = int(input('Миллиграммы = '))
@@ -70,9 +78,44 @@ elif choice == 6:       #Конвертер мер и весов
     elif choice2 == 3:
         num1 = int(input('Килограммы = '))
         print('Ответ:', num1 / 1000)
+    elif choice2 == 4:
+        num1 = int(input('Граммы = '))
+        print('Ответ:', num1 * 1000)
+    elif choice2 == 5:
+        num1 = int(input('Килограммы = '))
+        print('Ответ:', num1 * 1000)
+    elif choice2 == 6:
+        num1 = int(input('Тонны = '))
+        print('Ответ:', num1 * 1000)
     
-
-
+    
+elif choice5 == 2:  #Растояние
+    print('Что ты хочешь конвертировать?')
+    print('┏ 1. Миллиметры --> сантиметры')
+    print('┣ 2. Сантиметры --> метры')
+    print('┣ 3. Метры --> километры')
+    print('┣ 4. Сантиметры --> миллиметры')
+    print('┣ 5. Метры --> сантиметры')
+    print('┗ 6. Километры  --> метры')
+    choice6 = int(input())
+    if choice6 == 1:
+        num1 = int(input('Миллиметры = '))
+        print('Ответ:', num1 / 10)
+    elif choice6 == 2:
+        num1 = int(input('Сантиметры = '))
+        print('Ответ:', num1 / 100)
+    elif choice6 == 3:
+        num1 = int(input('Метры = '))
+        print('Ответ:', num1 / 1000)
+    elif choice6 == 4:
+        num1 = int(input('Сантиметры = '))
+        print('Ответ:', num1 * 10)
+    elif choice6 == 5:
+        num1 = int(input('Метры = '))
+        print('Ответ:', num1 * 100)
+    elif choice6 == 6:
+        num1 = int(input('Километры = '))
+        print('Ответ:', num1 * 1000)
 
 elif choice == 7:       #Доходность вклада
     print('Какой тип процента ты хочешь посчитать?')
